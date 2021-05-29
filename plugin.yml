@@ -1,0 +1,5 @@
+name: RankShop
+main: NetherMC\NuthMC\MainRs
+api: 3.14.0
+author: NuthMC&ICooLBoX
+version: 1.0.0
