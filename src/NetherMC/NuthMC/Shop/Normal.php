@@ -7,6 +7,12 @@ use pocketmine\Server;
 use pocketmine\command\CommandSender;
 use NetherMC\NuthMC\Form\SimpleForm;
 
+use pocketmine\sound\Sound;
+
+use pocketmine\level\sound\AnvilFallSound;
+use pocketmine\level\sound\PopSound;
+use pocketmine\level\sound\FizzSound;
+
 class Normal {
   
   public function Rank{
@@ -26,8 +32,10 @@ class Normal {
               $elite = $rapi->getGroup("Elite");
               $rapi->setGroup($player, $elite);
               $player->sendMessage("You have purchased rank Elite");
+              $player->getLevel()->addSound(new AnvilUseSound($player));
             }else{
               $player->sendMessage("You Dont Have enough money");
+              $player->getLevel()->addSound(new FizzSound($player));
               
             
           break;
@@ -39,8 +47,10 @@ class Normal {
               $vip = $rapi->getGroup("VIP");
               $rapi->setGroup($player, $vip);
               $player->sendMessage("You have purchased rank VIP");
+              $player->getLevel()->addSound(new AnvilUseSound($player));
             }else{
               $player->sendMessage("You Dont Have enough money");
+              $player->getLevel()->addSound(new FizzSound($player));
             
             
           break;
@@ -52,8 +62,10 @@ class Normal {
               $mvp = $rapi->getGroup("MVP");
               $rapi->setGroup($player, $mvp);
               $player->sendMessage("You have purchased rank MVP");
+              $player->getLevel()->addSound(new AnvilUseSound($player));
             }else{
               $player->sendMessage("You Dont Have enough money");
+              $player->getLevel()->addSound(new FizzSound($player));
             
           break;
           
@@ -64,8 +76,10 @@ class Normal {
               $nmc = $rapi->getGroup("NMC");
               $rapi->setGroup($player, $nmc);
               $player->sendMessage("You have purchased rank NMC");
+              $player->getLevel()->addSound(new AnvilUseSound($player));
             }else{
               $player->sendMessage("You Dont Have enough money");
+              $player->getLevel()->addSound(new FizzSound($player));
           
           break;
           
