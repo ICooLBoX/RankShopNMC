@@ -32,8 +32,8 @@ class RankList {
                 
               
               
-              $form->addButton("Normal Rank");
-              $form->addButton("Premium Ranks");
+              $form->addButton("§l§aNormal Ranks");
+              $form->addButton("§l§4Premium Ranks");
               $form->sendToPlayer($player);
               return $form;
             }
