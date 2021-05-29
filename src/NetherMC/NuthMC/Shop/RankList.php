@@ -14,7 +14,7 @@ use NetherMC\NuthMC\Shop\Normal;
 class RankList {
 	
 	public function RankList($player){
-		$form = new SimpleForm(SimpleForm(function (Player $sender, int $data = null) {
+		$form = new SimpleForm(function (Player $sender, int $data = null) {
 			$result = $data;
             if($result === null){
                 return true;
