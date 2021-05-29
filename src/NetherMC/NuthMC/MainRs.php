@@ -8,9 +8,9 @@ use pocketmine\Server;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-use Form\FormAPI;
-use Form\SimpleForm;
-use Form\ModalForm;
+use NetherMC\NuthMC\Form\FormAPI;
+use NetherMC\NuthMC\Form\SimpleForm;
+use NetherMC\NuthMC\Form\ModalForm;
 
 use NetherMC\NuthMC\Command\Commands;
 
